@@ -1,6 +1,4 @@
-/* ══════════════════════════════════════════
-   RESET & BASE
-   ══════════════════════════════════════════ */
+/* Base reset */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -12,12 +10,10 @@ html, body {
   min-height: 100vh;
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
   background: #f7f1eb;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
 }
 
-/* ══════════════════════════════════════════
-   PAGE CONTAINER — wide & immersive
-   ══════════════════════════════════════════ */
+/* Page layout */
 .page {
   width: 100%;
   background: #f7f1eb;
@@ -25,9 +21,7 @@ html, body {
   flex-direction: column;
 }
 
-/* ══════════════════════════════════════════
-   NAVBAR — wide
-   ══════════════════════════════════════════ */
+/* Header navigation */
 nav {
   height: 85px;
   padding: 0 45px;
@@ -36,7 +30,6 @@ nav {
   justify-content: space-between;
   background: #fdfaf7;
   border-bottom: 1px solid #e8dace;
-  /* border-bottom-left-radius: 30px; */
   border-radius: 30px 30px 30px 30px;
 }
 
@@ -97,9 +90,7 @@ nav {
   object-fit: contain;
 }
 
-/* ══════════════════════════════════════════
-   HERO — immersive horizontal spread
-   ══════════════════════════════════════════ */
+/* Product hero layout */
 .hero {
   display: flex;
   padding: 60px 45px;
@@ -108,7 +99,7 @@ nav {
   align-items: flex-start;
 }
 
-/* ── LEFT COLUMN ── */
+/* Product details column */
 .hero-left {
   width: 400px;
   flex-shrink: 0;
@@ -205,7 +196,7 @@ nav {
   color: #444;
 }
 
-/* ── CENTER COLUMN ── */
+/* Product image column */
 .hero-center {
   flex: 1;
   display: flex;
@@ -253,9 +244,9 @@ nav {
   letter-spacing: 0.3px;
 }
 
-/* ── RIGHT COLUMN ── */
+/* Purchase options column */
 .hero-right {
-  width: 400px; /* Matched to left column for perfect centering of the jacket */
+  width: 400px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -408,9 +399,7 @@ nav {
   filter: brightness(0) invert(1);
 }
 
-/* ══════════════════════════════════════════
-   FEATURE CARDS — wide strip
-   ══════════════════════════════════════════ */
+/* Feature card strip */
 .features {
   display: flex;
   gap: 12px;
@@ -456,9 +445,7 @@ nav {
   color: #777;
 }
 
-/* ══════════════════════════════════════════
-   BOTTOM HIGHLIGHTS — wide
-   ══════════════════════════════════════════ */
+/* Product highlights footer */
 .highlights {
   display: flex;
   justify-content: space-between;
