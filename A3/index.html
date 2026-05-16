@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunMall - Too Yumm Potato Chips</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- Header navigation and search controls -->
+    <header>
+        <div class="logo">
+            <img src="Images/Logo.png" alt="SunMall Logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CHIPS</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" placeholder="Search for chips...">
+            <div class="search-divider"></div>
+            <div class="cart-icon-wrap">
+                <img src="Images/Nav-Icon-2.png" alt="Cart">
+                <span class="badge">4</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main product hero section -->
+    <section class="hero">
+
+        <!-- Left hero content and purchase controls -->
+        <div class="hero-left">
+            <div class="real-badge">
+                <img src="Images/Star.png" alt="star"> 100% REAL INGREDIENTS
+            </div>
+            <h1 class="hero-heading">
+                EAT OUR <span class="green">GRILLED</span><br>POTATO CHIPS
+            </h1>
+            <img src="./Images/Line.png" alt="Line">
+            <p class="hero-sub">Satisfying savory Chinese meat sauce chips<br>without any hard-to-find ingredients.</p>
+
+            <div class="action-row">
+                <button class="cart-btn-main">
+                    <span class="cart-icon-circle">
+                        <img src="Images/Bag.png" alt="bag">
+                    </span>
+                    ADD TO CART
+                </button>
+                <div class="qty-ctrl">
+                    <button class="minus">-</button>
+                    <span>2</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+
+            <div class="feature-row">
+                <div class="feature-item">
+                    <div class="fi-icon"><img src="Images/Left-1.png" alt="natural"></div>
+                    <div>
+                        <strong>100% NATURAL</strong>
+                        <p>No artificial flavors</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="fi-icon"><img src="Images/Left-2.png" alt="grilled"></div>
+                    <div>
+                        <strong>OVEN GRILLED</strong>
+                        <p>Not fried</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="fi-icon"><img src="Images/Left-3.png" alt="crunchy"></div>
+                    <div>
+                        <strong>TASTY &amp; CRUNCHY</strong>
+                        <p>Irresistible bite</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Center product pack image -->
+        <div class="packet-zone">
+            <img src="Images/Main.png" alt="Too Yumm Veggie Stix" class="main-bag">
+        </div>
+
+        <!-- Right-side product highlights -->
+        <div class="hero-right">
+            <div class="side-item">
+                <div class="side-circle green-bg">
+                    <img src="Images/Right-1.png" alt="Extra Chili">
+                </div>
+                <div class="side-text">
+                    <strong>EXTRA CHILI</strong>
+                    <p>Zha Jiang mian is crazy hot even when it's simplified</p>
+                </div>
+            </div>
+            <div class="side-item">
+                <div class="side-circle red-bg">
+                    <img src="Images/Right-2.png" alt="Beef Flavour">
+                </div>
+                <div class="side-text">
+                    <strong>BEEF FLAVOUR</strong>
+                    <p>Comes with a lot extra energy calories and Oxizen</p>
+                </div>
+            </div>
+            <div class="side-item">
+                <div class="side-circle amber-bg">
+                    <img src="Images/Right-3.png" alt="Smokey Sauce">
+                </div>
+                <div class="side-text">
+                    <strong>SMOKEY SAUCE</strong>
+                    <p>The meat sauce is kind of reminiscent of a Chinese.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured flavour cards -->
+    <section class="bottom-bar">
+        <div class="flavours-label">
+            <h2>OUR TOP<br>FLAVOURS</h2>
+            <hr>
+            <div class="arrows">
+                <button aria-label="Previous Flavor"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="arr-active" aria-label="Next Flavor"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="cards-track">
+
+            <div class="prod-card">
+                <div class="prod-img"><img src="Images/Down-1.png" alt="Black Barbecue"></div>
+                <div class="prod-info">
+                    <h3>BLACK BARBECUE</h3>
+                    <div class="stars">★★★★★ <span>(4.8)</span></div>
+                    <div class="price-row">
+                        <span class="price">$12.30</span>
+                        <button class="order-now">ORDER NOW <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prod-card">
+                <div class="prod-img"><img src="Images/Down-2.png" alt="Mr. Potato"></div>
+                <div class="prod-info">
+                    <h3>MR. POTATO</h3>
+                    <div class="stars">★★★★★ <span>(4.9)</span></div>
+                    <div class="price-row">
+                        <span class="price">$15.89</span>
+                        <button class="order-now">ORDER NOW <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prod-card">
+                <div class="prod-img"><img src="Images/Down-3.png" alt="Tom Yomm"></div>
+                <div class="prod-info">
+                    <h3>TOM YOMM</h3>
+                    <div class="stars">★★★★★ <span>(4.7)</span></div>
+                    <div class="price-row">
+                        <span class="price">$11.50</span>
+                        <button class="order-now">ORDER NOW <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+</html>
