@@ -143,6 +143,10 @@ body{
     color:white;
 }
 
+.dark .header h1{
+    color:white;
+}
+
 .dark .card,
 .dark .task-card{
     background:#1f2937;
