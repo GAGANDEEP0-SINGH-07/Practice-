@@ -85,10 +85,13 @@ body{
 #taskContainer{
     display:flex;
     flex-direction:column;
+    align-items:flex-start;
     gap:15px;
 }
 
 .task-card{
+    width:100%;
+    max-width:360px;
     background:white;
     padding:15px;
     border-radius:10px;
