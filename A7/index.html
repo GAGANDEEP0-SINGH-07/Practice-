@@ -1,58 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
-<body>
 
-    <div class="container">
-        <div class="header">
-            <h1>Task Manager</h1>
-            <button id="themeToggle">🌙</button>
-        </div>
-
-        <form id="taskForm" class="task-form">
-            <input
-                type="text"
-                id="taskInput"
-                placeholder="Enter task title"
-                required
-            >
-
-            <select id="category" required>
-                <option value="">Select Category</option>
-                <option value="Work">Work</option>
-                <option value="Personal">Personal</option>
-                <option value="Study">Study</option>
-            </select>
-
-            <button type="submit">Add Task</button>
-        </form>
-
-        <div class="stats">
-            <div class="card">
-                <h3>Total</h3>
-                <p id="totalCount">0</p>
+<body data-theme="light">
+    <main>
+        <nav aria-label="Primary">
+            <div class="nav-left">
+                <i class="ri-task-line" aria-hidden="true"></i>
+                <h2>Task Manager</h2>
             </div>
 
-            <div class="card">
+            <button class="nav-right" type="button" aria-label="Switch to dark theme">
+                <i class="ri-moon-fill" aria-hidden="true"></i>
+            </button>
+        </nav>
+
+        <section class="task-form">
+            <h2><span><i class="ri-add-large-line" aria-hidden="true"></i></span> Create New Task</h2>
+
+            <form id="taskForm" autocomplete="off">
+                <input
+                    type="text"
+                    placeholder="Enter Task title..."
+                    class="input-title"
+                    aria-label="Task title"
+                    maxlength="80"
+                    required
+                >
+                <select class="category" aria-label="Task category" required>
+                    <option value="">Select Category</option>
+                    <option value="Study">Study</option>
+                    <option value="Work">Work</option>
+                    <option value="Personal">Personal</option>
+                </select>
+                <button class="add-task" type="submit">
+                    <i class="ri-add-large-line" aria-hidden="true"></i>
+                    <span class="button-label">Add Task</span>
+                </button>
+            </form>
+        </section>
+
+        <section class="task-counter" aria-label="Task summary">
+            <div class="counter-card">
+                <h3>Total Tasks</h3>
+                <span class="total">0</span>
+            </div>
+
+            <div class="counter-card">
                 <h3>Completed</h3>
-                <p id="completedCount">0</p>
+                <span class="completed">0</span>
             </div>
 
-            <div class="card">
+            <div class="counter-card">
                 <h3>Pending</h3>
-                <p id="pendingCount">0</p>
+                <span class="pending">0</span>
             </div>
-        </div>
+        </section>
 
-        <div id="taskContainer"></div>
-    </div>
+        <section class="task-container" aria-live="polite"></section>
+    </main>
+
 
     <script src="script.js"></script>
-
 </body>
+
 </html>
