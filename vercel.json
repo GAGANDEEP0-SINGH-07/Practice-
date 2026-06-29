@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "/A8/", "permanent": false }
+  ]
+}
